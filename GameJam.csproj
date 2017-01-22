@@ -101,6 +101,7 @@
     <Compile Include="Assets\Scripts\Tower.cs" />
     <Compile Include="Assets\Scripts\WaterDetector.cs" />
     <Compile Include="Assets\Scripts\WaterManager.cs" />
+    <Compile Include="Assets\Scripts\WateryDeath.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

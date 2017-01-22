@@ -57,7 +57,7 @@ public class Tower : MonoBehaviour
 
     public void UpdateCameraTarget()
     {
-        camera.UpdateTarget( m_ActiveFloors.LastOrDefault());
+        camera.UpdateTarget( m_ActiveFloors[m_ActiveFloors.Count - 2]);
     }
 
     public GameObject NextFloor(Floor currentFloor) //Next Floor returns the index of the floor a player will move to after reaching the end of their current floor
@@ -109,9 +109,14 @@ public class Tower : MonoBehaviour
 
     public void CheckIsLastFloor(Floor currentFloor)
     {
-        if (currentFloor.gameObject.Equals(m_ActiveFloors.LastOrDefault()))
+        
+        if(m_ActiveFloors.Count == 6)
         {
-            UpdateFloors();
+            RemoveFloor();
+        }
+        if (currentFloor.gameObject.Equals(m_ActiveFloors[m_ActiveFloors.Count() - 2]))
+        {
+            AddFloor();
         }
     }
 
