@@ -116,7 +116,7 @@ namespace UnityStandardAssets._2D
         public void DeathState()
         {
             gameObject.GetComponent<Platformer2DUserControl>().enabled = false;
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
             
         }
 

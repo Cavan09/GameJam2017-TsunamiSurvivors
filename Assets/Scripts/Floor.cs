@@ -63,6 +63,7 @@ public class Floor : MonoBehaviour
     {
         if (System.Text.RegularExpressions.Regex.IsMatch(other.tag, "Player", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
         {
+            Debug.Log("Hitting Stuff");
             m_Tower.CheckIsLastFloor(this);
             if(!Cleared)
             {

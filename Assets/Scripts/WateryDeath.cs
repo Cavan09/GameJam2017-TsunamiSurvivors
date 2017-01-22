@@ -6,7 +6,7 @@ using UnityStandardAssets._2D;
 
 public class WateryDeath : MonoBehaviour
 {
-    BoxCollider2D Deathbox;
+    public BoxCollider2D Deathbox;
 
     private void Start()
     {
