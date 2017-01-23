@@ -46,3 +46,11 @@ Network Trash Folder
 Temporary Items
 .apdisk
 .vs/GameJam/v14/.suo
+
+Library/
+Temp/
+*.meta
+bin/
+*.exe
+Build_Data/
+ProjectSettering/

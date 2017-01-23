@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2A943988-500C-A76C-9F9D-B54527EE82BC}</ProjectGuid>
+    <ProjectGuid>{462F9761-0FAB-1C64-1AA8-8113395C31FD}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>EditorPlugins:7</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>5.5.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -140,23 +140,24 @@
       <Project>{4B918598-3D78-06A9-514E-E8460B121790}</Project>
       <Name>GameJam</Name>
     </ProjectReference>
+    <ProjectReference Include="GameJam.Editor.Plugins.csproj">
+      <Project>{2A943988-500C-A76C-9F9D-B54527EE82BC}</Project>
+      <Name>GameJam.Editor.Plugins</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\AntialiasingEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\BloomAndFlaresEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\BloomEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CameraMotionBlurEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionCurvesEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\ColorCorrectionLookupEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\CreaseShadingEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldDeprecatedEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\DepthOfFieldEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\EdgeDetectionEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\NoiseAndGrainEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\SunShaftsEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\TonemappingEditor.cs" />
-    <Compile Include="Assets\Standard Assets\Editor\ImageEffects\VignetteAndChromaticAberrationEditor.cs" />
+    <Compile Include="Assets\InControl\Editor\InControlBuilder.cs" />
+    <Compile Include="Assets\InControl\Editor\InControlManagerEditor.cs" />
+    <Compile Include="Assets\InControl\Editor\InputManagerAssetGenerator.cs" />
+    <Compile Include="Assets\InControl\Editor\ProfileListGenerator.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\GenericListAdaptor.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\IReorderableListAdaptor.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\Internal\GUIHelper.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\Internal\ReorderableListResources.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListControl.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListFlags.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\ReorderableListGUI.cs" />
+    <Compile Include="Assets\InControl\Editor\ReorderableList\SerializedPropertyAdaptor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

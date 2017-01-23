@@ -8,7 +8,8 @@ public class WaterDetector : MonoBehaviour
     {
         if (Hit.GetComponent<Rigidbody2D>() != null)
         {
-            transform.parent.GetComponent<WaterManager>().Splash(transform.position.x, Hit.GetComponent<Rigidbody2D>().velocity.y * Hit.GetComponent<Rigidbody2D>().mass / 40f);
+            var waterManager = GameObject.FindObjectOfType<WaterManager>();
+            waterManager.Splash(transform.position.x, Hit.GetComponent<Rigidbody2D>().velocity.y * Hit.GetComponent<Rigidbody2D>().mass / 40f);
         }
     }
 }
